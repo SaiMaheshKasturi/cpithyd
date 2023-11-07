@@ -6,13 +6,18 @@
     <title>getElementById</title>
 </head>
 <body>
-    <p id="menu">Hello World</p>
+    <p id="menu">Hello</p>
+    <h3>World</h3>
     <script>
         var a=document.getElementById("menu");
         a.style.backgroundColor="red";
         a.style.padding="20px";
         a.style.border="1px solid black";
-        a.style.color="red";
-    </script>
+        a.style.color="black";
+        var b=document.getElementsByTagName("h3")[0];
+        b.style.backgroundColor="blue";
+        b.style.padding="20px";
+        b.style.border="1px solid black";
+        </script>
 </body>
 </html>
