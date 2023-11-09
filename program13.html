@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempatature in fahrenheit</title>
+</head>
+<body>
+    <input type="text" name="" id="uinput" placeholder="Enter the tempatature in fahrenheit">
+    <button onclick="Convert()">Sumbit</button>
+    <p>Result</p>
+    <span id="result"></span>
+    <script>
+        var celsius = 0;
+        var fahrenheit = 0;
+        function Convert(){
+            fahrenheit = parseFloat(document.getElementById('uinput').value);
+            console.log(fahrenheit);
+            celsius = (fahrenheit -32)*(5/9);
+            //fahrenheit = (celsius*(5/9))+32;
+            document.getElementById('result').innerHTML = celsius;
+        }
+    </script>
+</body>
+</html>
